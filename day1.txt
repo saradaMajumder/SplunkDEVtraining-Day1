@@ -1,0 +1,67 @@
+metadata ->
+
+host, source, sourcetype
+
+
+_internal 
+
+_audit
+
+_introspection
+
+
+_telemetry
+
+
+_thefishbucket
+
+| search 
+
+
+pipeline
+
+
+operators
+
+OR AND NOT
+
+wildcard (*)
+
+
+| table 
+
+syntax:->  | table <field_name1>,<field_name2>,.....
+
+
+| dedup 
+
+syntax:->  | dedup <field_name1>,<field_name2>,.....
+
+
+| rename
+
+syntax:-> | rename <existing_field_name> as <new_field_name>
+
+| replace 
+
+syntax:-> | replace <existing_field_value> with <new_field_value> in <field_name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
