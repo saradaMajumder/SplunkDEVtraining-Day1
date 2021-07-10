@@ -1,0 +1,76 @@
+| sort
+
+syntax :-> | sort <fieldname>   /  | sort - <fieldname>
+
+
+| top 
+
+syntax :-> | top <int> <fieldname>
+
+| rare 
+
+syntax :-> | rare <int> <fieldname>
+
+
+| head 
+
+syntax :-> | head <int>
+
+| tail
+
+syntax :-> | tail <int>
+
+
+| stats 
+
+method  count
+GET     4
+POST    10
+
+
+| chart
+
+
+| timechart
+
+
+| eval <field_name>=if(condition,value,else_value)
+
+
+| eval <field_name>=case(condition1,value1,condition2,value2,condition3,value3,......,default_condition,default_value)\
+
+
+strptime
+
+strftime
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
