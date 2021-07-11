@@ -1,0 +1,118 @@
+| fields
+
+syntax:-> | fields <fieldname> / | fields - <fieldname>
+
+
+| addcoltotals 
+
+
+syntax:-> | addcoltotals  <fieldname>
+ 
+
+| addtotals 
+
+syntax:-> | addtotals  <fieldname>
+
+
+| appendcols
+
+
+syntax: -> query1 | appendcols [ query2]
+
+
+| append
+
+
+syntax: -> query1 | append [ query2]
+-------------------------------------------------------------------------
+
+Field Extraction (search time field extraction)
+
+1) IFX (Interractive field extractor)
+2) Regex (rex command)
+
+
+| rex
+
+Syntax: -> | rex field=<fieldname> "prepattern(?<fieldname>extracted_pattern)post_pattern"
+
+                          _raw or any existing field
+\d -> digit
+
+\w -> alphabet
+
+\s -> space
+
++ -> one or more
+
+.* -> all or everything
+
+
+Yash is 8 years old.  
+monika is 13 years old. 
+
+
+| rex field=_raw "\w\w\w\w\s\w\w\s(?<age>\d)\s\w\w\w\w\w\s\w\w\w\."
+
+
+| rex field=_raw "\w+\s+\w+\s+(?<age>\d+)\s+\w+\s+\w+\."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
